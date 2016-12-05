@@ -89,7 +89,7 @@ RUN set -x \
 	&& ./configure \
 		--prefix="$HTTPD_PREFIX" \
 		--enable-mods-shared=reallyall \
-		--enable-lua=shared
+		--enable-lua=shared \
 	&& make -j "$(nproc)" \
 	&& make install \
 	\
